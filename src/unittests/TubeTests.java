@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
-  * @author
+  * @author  shira postelnik & shira fraind
  *Unit tests for primitives.Tube class
  */
 public class TubeTests {
@@ -25,5 +25,11 @@ public class TubeTests {
        assertEquals("Wrong normal to Cylinder", new Vector(1.0, 0.0, 0.0), t.getNormal(new Point3D(2, 0, 0)));
 	}
 
-
+	/**
+     * Test method for intersection Points with ray and tube
+     */
+	public void testFindIntersectionPoints()
+	{
+		
+	}
 }

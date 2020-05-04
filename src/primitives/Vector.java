@@ -65,7 +65,7 @@ return nv;
 }
 public Vector scale(double tmp)
 {
-return new Vector(_head._x.get()*tmp,_head._y.get()*tmp,_head._z.get()*tmp);
+	return new Vector(_head._x.get()*tmp,_head._y.get()*tmp,_head._z.get()*tmp);
 }
 public double dotProduct(Vector vector)
 {
@@ -73,10 +73,10 @@ public double dotProduct(Vector vector)
 }
 public Vector crossProduct(Vector v)
 {
-return new Vector(this._head.get_y().get()*v._head.get_z().get()-this._head.get_z().get()*v._head.get_y().get(),
-this._head.get_z().get()*v._head.get_x().get()-this._head.get_x().get()*v._head.get_z().get(),
-this._head.get_x().get()*v._head.get_y().get()-this._head.get_y().get()*v._head.get_x().get());
-
+	return new Vector(this._head.get_y().get()*v._head.get_z().get()-this._head.get_z().get()*v._head.get_y().get(),
+			this._head.get_z().get()*v._head.get_x().get()-this._head.get_x().get()*v._head.get_z().get(),
+			this._head.get_x().get()*v._head.get_y().get()-this._head.get_y().get()*v._head.get_x().get());
+	 
 }
 public double lengthSquared()
 {
@@ -88,7 +88,7 @@ return Math.sqrt(this.lengthSquared());
 }
 public Vector normalize()
 {
-this._head = scale(1/length())._head;
+this._head = scale(1/this.length())._head;
 return this;
 }
 public Vector normalized()
@@ -100,4 +100,3 @@ return (new Vector(this).normalize());
 
 
 }
-

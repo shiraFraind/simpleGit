@@ -12,7 +12,7 @@ import primitives.Util.*;
 
 
 /**
-  * @author 
+  * @author  shira postelnik & shira fraind
  *Unit tests for primitives.Vector class
  */
 public class VectorTests {

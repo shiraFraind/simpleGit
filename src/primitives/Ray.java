@@ -21,12 +21,17 @@ public class Ray
     	_P0=_ray._P0;
     	_Dir=_ray._Dir;	
     }
-    public Ray(Point3D _p0,Vector _dir)throws IllegalArgumentException
+    public Ray(Point3D _p0,Vector _dir)//throws IllegalArgumentException
     {
     	if(_dir.normalized()!=_dir)
-    		throw new IllegalArgumentException("the vector is not normelized");
+    		//throw new IllegalArgumentException("the vector is not normelized");
+    		_dir=_dir.normalize();
     	_P0=new Point3D(_p0);
     	_Dir=new Vector(_dir);	
+    }
+    public Point3D getPoint(double t)
+    {
+    	return new Point3D(_P0.add(_Dir.scale(t)));
     }
     
     //OVERRIDE FUNCTIONS

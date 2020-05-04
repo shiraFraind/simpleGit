@@ -1,4 +1,6 @@
 package geometries;
+import java.util.List;
+
 import primitives.*;
 
 
@@ -25,7 +27,11 @@ public class Cylinder extends Tube
 		 return "height:"+_height;
 	} 
 	    
-
+	@Override
+	public List<Point3D> findIntersections(Ray ray) {
+		// TODO Auto-generated method stub
+		return null;
+	} 
 	
 	
 
